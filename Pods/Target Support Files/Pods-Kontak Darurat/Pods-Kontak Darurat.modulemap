@@ -1,0 +1,6 @@
+framework module Pods_Kontak_Darurat {
+  umbrella header "Pods-Kontak Darurat-umbrella.h"
+
+  export *
+  module * { export * }
+}
