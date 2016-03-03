@@ -115,10 +115,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idI-zE-BvF">
                                         <rect key="frame" x="18" y="375" width="97" height="30"/>
                                         <state key="normal" title="Buat QR Code"/>
+                                        <connections>
+                                            <action selector="BuatQRCode:" destination="9pv-A4-QxB" eventType="touchUpInside" id="doa-GO-8ZD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1U-lQ-yqZ">
                                         <rect key="frame" x="185" y="375" width="117" height="30"/>
                                         <state key="normal" title="Simpan QR Code"/>
+                                        <connections>
+                                            <action selector="SimpanQRCode:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Xg5-sS-yvz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </scrollView>
@@ -128,14 +134,12 @@
                     <tabBarItem key="tabBarItem" title="Nomor Darurat" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="BPJSField" destination="o1y-hV-eMV" id="uGM-Rn-71a"/>
-                        <outlet property="BuatQRButton" destination="idI-zE-BvF" id="Sis-mC-8RS"/>
                         <outlet property="KTPField" destination="Gwr-x0-SiO" id="pfV-oY-MPe"/>
                         <outlet property="NameField" destination="PMe-Hb-T7R" id="lRE-u7-zqA"/>
                         <outlet property="NoBapakField" destination="ar7-5b-CIS" id="MLv-he-KZx"/>
                         <outlet property="NoIbuField" destination="eWu-AK-iTk" id="82Z-Ch-JO2"/>
                         <outlet property="NoKantorField" destination="5Zm-pb-aTc" id="a6e-sE-xcm"/>
                         <outlet property="NoLainField" destination="izf-HY-KoP" id="Fsx-PP-i6f"/>
-                        <outlet property="SimpanQRButton" destination="z1U-lQ-yqZ" id="eqm-q0-Ess"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

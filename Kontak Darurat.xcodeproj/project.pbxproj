@@ -16,6 +16,7 @@
 		DB6A09ED1C86E0D600E6DA5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6A09EB1C86E0D600E6DA5C /* LaunchScreen.storyboard */; };
 		DB6A09F81C86E0D600E6DA5C /* Kontak_DaruratTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A09F71C86E0D600E6DA5C /* Kontak_DaruratTests.swift */; };
 		DB6A0A031C86E0D600E6DA5C /* Kontak_DaruratUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A0A021C86E0D600E6DA5C /* Kontak_DaruratUITests.swift */; };
+		DB6A0A111C86FB4400E6DA5C /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A0A101C86FB4400E6DA5C /* Contacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		DB6A09FE1C86E0D600E6DA5C /* Kontak DaruratUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kontak DaruratUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6A0A021C86E0D600E6DA5C /* Kontak_DaruratUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kontak_DaruratUITests.swift; sourceTree = "<group>"; };
 		DB6A0A041C86E0D600E6DA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB6A0A101C86FB4400E6DA5C /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		DB6A09DF1C86E0D600E6DA5C /* Kontak Darurat */ = {
 			isa = PBXGroup;
 			children = (
+				DB6A0A121C86FBC300E6DA5C /* Model */,
 				DB6A09E01C86E0D600E6DA5C /* AppDelegate.swift */,
 				DB6A09E21C86E0D600E6DA5C /* FirstViewController.swift */,
 				DB6A09E41C86E0D600E6DA5C /* SecondViewController.swift */,
@@ -150,6 +153,14 @@
 				DB6A0A041C86E0D600E6DA5C /* Info.plist */,
 			);
 			path = "Kontak DaruratUITests";
+			sourceTree = "<group>";
+		};
+		DB6A0A121C86FBC300E6DA5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB6A0A101C86FB4400E6DA5C /* Contacts.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6A0A111C86FB4400E6DA5C /* Contacts.swift in Sources */,
 				DB6A09E51C86E0D600E6DA5C /* SecondViewController.swift in Sources */,
 				DB6A09E11C86E0D600E6DA5C /* AppDelegate.swift in Sources */,
 				DB6A09E31C86E0D600E6DA5C /* FirstViewController.swift in Sources */,
