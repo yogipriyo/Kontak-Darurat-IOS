@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Nomor Darurat-->
@@ -17,125 +18,195 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-6Z-15b">
-                                <rect key="frame" x="0.0" y="-76" width="320" height="595"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LVC-6Z-15b">
+                                <rect key="frame" x="-4" y="0.0" width="328" height="568"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Silahkan isi kolom dibawah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-OY-Tma">
-                                        <rect key="frame" x="18" y="26" width="151" height="15"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pastikan device terkoneksi dengan internet saat ingin membuat QR Code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVP-9Z-szm">
-                                        <rect key="frame" x="18" y="49" width="284" height="31"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tx4-Du-fL7">
+                                        <rect key="frame" x="0.0" y="-181" width="328" height="749"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Silahkan isi kolom dibawah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxf-OY-Tma">
+                                                <rect key="frame" x="18" y="27" width="150.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pastikan device terkoneksi dengan internet saat ingin membuat QR Code" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVP-9Z-szm">
+                                                <rect key="frame" x="17" y="50" width="284" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFw-J7-GFU">
+                                                <rect key="frame" x="18" y="104" width="33" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PMe-Hb-T7R">
+                                                <rect key="frame" x="154" y="100" width="163" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="163" id="7yU-G4-djK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. KTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR3-Dc-rdQ">
+                                                <rect key="frame" x="17" y="142" width="46" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gwr-x0-SiO">
+                                                <rect key="frame" x="154" y="138" width="163" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. BPJS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2i-sp-49n">
+                                                <rect key="frame" x="18" y="180" width="52" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1y-hV-eMV">
+                                                <rect key="frame" x="155" y="176" width="162" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Tlp Ibu/Istri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjz-FA-84l">
+                                                <rect key="frame" x="17" y="219" width="87.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWu-AK-iTk">
+                                                <rect key="frame" x="155" y="214" width="162" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Tlp Bapak/Suami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lm-Xc-mwi">
+                                                <rect key="frame" x="17" y="255" width="118" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ar7-5b-CIS">
+                                                <rect key="frame" x="154" y="251" width="163" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Tlp Kantor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txM-Bd-y6N">
+                                                <rect key="frame" x="17" y="293" width="81.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zm-pb-aTc">
+                                                <rect key="frame" x="155" y="289" width="162" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. Tlp Lainnya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5c-9J-8bH">
+                                                <rect key="frame" x="17" y="331" width="87.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="izf-HY-KoP">
+                                                <rect key="frame" x="155" y="327" width="162" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-1B-cPY">
+                                                <rect key="frame" x="18" y="376" width="292" height="285"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="285" id="YQL-If-Ecn"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idI-zE-BvF">
+                                                <rect key="frame" x="18" y="389" width="105" height="30"/>
+                                                <state key="normal" title="Buat QR Code"/>
+                                                <connections>
+                                                    <action selector="BuatQRCode:" destination="9pv-A4-QxB" eventType="touchUpInside" id="doa-GO-8ZD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1U-lQ-yqZ">
+                                                <rect key="frame" x="185" y="389" width="125" height="30"/>
+                                                <state key="normal" title="Simpan QR Code"/>
+                                                <connections>
+                                                    <action selector="SimpanQRCode:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Xg5-sS-yvz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="4Pa-Xo-8Vw"/>
+                                            <constraint firstAttribute="trailing" secondItem="izf-HY-KoP" secondAttribute="trailing" constant="11" id="26j-8h-guB"/>
+                                            <constraint firstItem="Gxf-OY-Tma" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="18" id="3qT-8R-IOk"/>
+                                            <constraint firstItem="Q2i-sp-49n" firstAttribute="top" secondItem="fR3-Dc-rdQ" secondAttribute="bottom" constant="23.5" id="3qg-md-4Lg"/>
+                                            <constraint firstItem="izf-HY-KoP" firstAttribute="leading" secondItem="b5c-9J-8bH" secondAttribute="trailing" constant="50.5" id="5n9-IF-hux"/>
+                                            <constraint firstItem="PMe-Hb-T7R" firstAttribute="top" secondItem="BFw-J7-GFU" secondAttribute="bottom" constant="-18.5" id="6d4-Ic-Cfk"/>
+                                            <constraint firstItem="mZd-1B-cPY" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="18" id="6fg-P8-GtK"/>
+                                            <constraint firstItem="ar7-5b-CIS" firstAttribute="top" secondItem="eWu-AK-iTk" secondAttribute="bottom" constant="7" id="7Vo-zc-wHi"/>
+                                            <constraint firstItem="izf-HY-KoP" firstAttribute="top" secondItem="5Zm-pb-aTc" secondAttribute="bottom" constant="8" id="8by-QZ-f6j"/>
+                                            <constraint firstItem="fR3-Dc-rdQ" firstAttribute="top" secondItem="BFw-J7-GFU" secondAttribute="bottom" constant="23.5" id="8cj-DV-bAU"/>
+                                            <constraint firstAttribute="trailing" secondItem="z1U-lQ-yqZ" secondAttribute="trailing" constant="18" id="Abv-jA-SNz"/>
+                                            <constraint firstItem="5Lm-Xc-mwi" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="17" id="Aee-wr-tbn"/>
+                                            <constraint firstAttribute="trailing" secondItem="5Zm-pb-aTc" secondAttribute="trailing" constant="11" id="GN8-Tv-FUu"/>
+                                            <constraint firstItem="o1y-hV-eMV" firstAttribute="leading" secondItem="Q2i-sp-49n" secondAttribute="trailing" constant="85" id="Gdl-Lk-EQJ"/>
+                                            <constraint firstItem="b5c-9J-8bH" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="17" id="HhD-Io-Glm"/>
+                                            <constraint firstItem="5Zm-pb-aTc" firstAttribute="top" secondItem="ar7-5b-CIS" secondAttribute="bottom" constant="8" id="IUC-vx-6xb"/>
+                                            <constraint firstItem="eWu-AK-iTk" firstAttribute="top" secondItem="o1y-hV-eMV" secondAttribute="bottom" constant="8" id="IfJ-DH-on4"/>
+                                            <constraint firstItem="5Lm-Xc-mwi" firstAttribute="top" secondItem="Vjz-FA-84l" secondAttribute="bottom" constant="21.5" id="Led-uK-3uX"/>
+                                            <constraint firstAttribute="trailing" secondItem="idI-zE-BvF" secondAttribute="trailing" constant="205" id="OKy-ee-dBs"/>
+                                            <constraint firstAttribute="trailing" secondItem="mZd-1B-cPY" secondAttribute="trailing" constant="18" id="Oyw-Wa-ArE"/>
+                                            <constraint firstItem="z1U-lQ-yqZ" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="185" id="Ruk-GO-eli"/>
+                                            <constraint firstAttribute="trailing" secondItem="eWu-AK-iTk" secondAttribute="trailing" constant="11" id="SyU-cU-nVL"/>
+                                            <constraint firstItem="b5c-9J-8bH" firstAttribute="top" secondItem="txM-Bd-y6N" secondAttribute="bottom" constant="23.5" id="V0I-Pl-Ed2"/>
+                                            <constraint firstItem="Gwr-x0-SiO" firstAttribute="leading" secondItem="fR3-Dc-rdQ" secondAttribute="trailing" constant="91" id="VfY-Xx-Eoz"/>
+                                            <constraint firstItem="txM-Bd-y6N" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="17" id="XDh-4h-hlE"/>
+                                            <constraint firstItem="Vjz-FA-84l" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="17" id="bpk-HR-TZK"/>
+                                            <constraint firstAttribute="height" constant="661" id="g8x-8P-JtO"/>
+                                            <constraint firstItem="z1U-lQ-yqZ" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="389" id="gQH-3k-gFO"/>
+                                            <constraint firstAttribute="trailing" secondItem="Gwr-x0-SiO" secondAttribute="trailing" constant="11" id="hbU-ET-aIP"/>
+                                            <constraint firstItem="fR3-Dc-rdQ" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="17" id="iPa-eg-v3H"/>
+                                            <constraint firstItem="txM-Bd-y6N" firstAttribute="top" secondItem="5Lm-Xc-mwi" secondAttribute="bottom" constant="23.5" id="iRd-hw-ZdV"/>
+                                            <constraint firstItem="mZd-1B-cPY" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="376" id="ibs-S6-Drp"/>
+                                            <constraint firstItem="idI-zE-BvF" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="389" id="jAz-uK-xza"/>
+                                            <constraint firstItem="idI-zE-BvF" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="18" id="jyy-aR-CAh"/>
+                                            <constraint firstItem="o1y-hV-eMV" firstAttribute="top" secondItem="Gwr-x0-SiO" secondAttribute="bottom" constant="8" id="kKd-9h-JuG"/>
+                                            <constraint firstItem="ar7-5b-CIS" firstAttribute="leading" secondItem="5Lm-Xc-mwi" secondAttribute="trailing" constant="19" id="mzF-rI-dNt"/>
+                                            <constraint firstItem="BFw-J7-GFU" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="104" id="nef-Qy-ng4"/>
+                                            <constraint firstItem="PMe-Hb-T7R" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="100" id="oIz-s9-NBf"/>
+                                            <constraint firstAttribute="trailing" secondItem="PMe-Hb-T7R" secondAttribute="trailing" constant="11" id="oTc-9H-8CM"/>
+                                            <constraint firstItem="Q2i-sp-49n" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="18" id="pl4-Qw-Y8w"/>
+                                            <constraint firstItem="5Zm-pb-aTc" firstAttribute="leading" secondItem="txM-Bd-y6N" secondAttribute="trailing" constant="56.5" id="qVd-Mg-RUV"/>
+                                            <constraint firstItem="Vjz-FA-84l" firstAttribute="top" secondItem="Q2i-sp-49n" secondAttribute="bottom" constant="24.5" id="rEY-Za-Cho"/>
+                                            <constraint firstItem="Gxf-OY-Tma" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="27" id="rgx-qY-dA9"/>
+                                            <constraint firstItem="eWu-AK-iTk" firstAttribute="leading" secondItem="Vjz-FA-84l" secondAttribute="trailing" constant="50.5" id="urY-tw-QqH"/>
+                                            <constraint firstAttribute="trailing" secondItem="ar7-5b-CIS" secondAttribute="trailing" constant="11" id="wWa-vg-Hkz"/>
+                                            <constraint firstItem="BFw-J7-GFU" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="18" id="x9T-SW-dii"/>
+                                            <constraint firstAttribute="trailing" secondItem="o1y-hV-eMV" secondAttribute="trailing" constant="11" id="yX7-gN-5fp"/>
+                                            <constraint firstItem="Gwr-x0-SiO" firstAttribute="top" secondItem="PMe-Hb-T7R" secondAttribute="bottom" constant="8" id="zVF-va-B0i"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFw-J7-GFU">
-                                        <rect key="frame" x="18" y="92" width="129" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PMe-Hb-T7R">
-                                        <rect key="frame" x="155" y="88" width="147" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. KTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR3-Dc-rdQ">
-                                        <rect key="frame" x="18" y="130" width="129" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gwr-x0-SiO">
-                                        <rect key="frame" x="155" y="126" width="147" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. BPJS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2i-sp-49n">
-                                        <rect key="frame" x="18" y="168" width="129" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1y-hV-eMV">
-                                        <rect key="frame" x="155" y="164" width="147" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. Tlp Ibu/Istri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjz-FA-84l">
-                                        <rect key="frame" x="18" y="209" width="129" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWu-AK-iTk">
-                                        <rect key="frame" x="155" y="202" width="147" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. Tlp Bapak/Suami" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Lm-Xc-mwi">
-                                        <rect key="frame" x="18" y="247" width="129" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ar7-5b-CIS">
-                                        <rect key="frame" x="155" y="243" width="147" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. Tlp Kantor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txM-Bd-y6N">
-                                        <rect key="frame" x="18" y="285" width="129" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Zm-pb-aTc">
-                                        <rect key="frame" x="155" y="281" width="147" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. Tlp Lainnya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5c-9J-8bH">
-                                        <rect key="frame" x="18" y="323" width="129" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="izf-HY-KoP">
-                                        <rect key="frame" x="155" y="319" width="147" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idI-zE-BvF">
-                                        <rect key="frame" x="18" y="375" width="97" height="30"/>
-                                        <state key="normal" title="Buat QR Code"/>
-                                        <connections>
-                                            <action selector="BuatQRCode:" destination="9pv-A4-QxB" eventType="touchUpInside" id="doa-GO-8ZD"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1U-lQ-yqZ">
-                                        <rect key="frame" x="185" y="375" width="117" height="30"/>
-                                        <state key="normal" title="Simpan QR Code"/>
-                                        <connections>
-                                            <action selector="SimpanQRCode:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Xg5-sS-yvz"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mka-fR-BZ2">
-                                        <rect key="frame" x="8" y="566" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="tx4-Du-fL7" firstAttribute="top" secondItem="LVC-6Z-15b" secondAttribute="top" id="DLb-Mo-g7J"/>
+                                    <constraint firstItem="tx4-Du-fL7" firstAttribute="leading" secondItem="LVC-6Z-15b" secondAttribute="leading" id="Kx2-nR-mvz"/>
+                                    <constraint firstAttribute="trailing" secondItem="tx4-Du-fL7" secondAttribute="trailing" id="ZKQ-dR-PDZ"/>
+                                    <constraint firstItem="tx4-Du-fL7" firstAttribute="centerX" secondItem="LVC-6Z-15b" secondAttribute="centerX" id="iLI-ei-jCO"/>
+                                    <constraint firstAttribute="bottom" secondItem="tx4-Du-fL7" secondAttribute="bottom" id="yIG-zx-hlE"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LVC-6Z-15b" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="D1l-sG-fI3"/>
+                            <constraint firstItem="LVC-6Z-15b" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="XRS-FQ-6Lf"/>
+                            <constraint firstItem="LVC-6Z-15b" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="igc-Ww-vUf"/>
+                            <constraint firstItem="LVC-6Z-15b" firstAttribute="bottom" secondItem="tsR-hK-woN" secondAttribute="bottomMargin" id="qwK-Lg-khj"/>
+                            <constraint firstItem="LVC-6Z-15b" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="yhA-cM-7qr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="LVC-6Z-15b" secondAttribute="trailing" constant="-20" id="z4R-Tv-E3i"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Nomor Darurat" image="first" id="acW-dT-cKf"/>
                     <connections>
@@ -146,11 +217,12 @@
                         <outlet property="NoIbuField" destination="eWu-AK-iTk" id="82Z-Ch-JO2"/>
                         <outlet property="NoKantorField" destination="5Zm-pb-aTc" id="a6e-sE-xcm"/>
                         <outlet property="NoLainField" destination="izf-HY-KoP" id="Fsx-PP-i6f"/>
+                        <outlet property="QRCodeImage" destination="mZd-1B-cPY" id="xdn-ZV-cSm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="400" y="-303"/>
+            <point key="canvasLocation" x="400" y="-388"/>
         </scene>
         <!--Scan Kode-->
         <scene sceneID="wg7-f3-ORb">

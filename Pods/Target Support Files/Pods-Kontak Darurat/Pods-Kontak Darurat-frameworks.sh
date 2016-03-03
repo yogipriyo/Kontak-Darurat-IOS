@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Kontak Darurat/Realm.framework"
   install_framework "Pods-Kontak Darurat/RealmSwift.framework"
+  install_framework "Pods-Kontak Darurat/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Kontak Darurat/Realm.framework"
   install_framework "Pods-Kontak Darurat/RealmSwift.framework"
+  install_framework "Pods-Kontak Darurat/SDWebImage.framework"
 fi
