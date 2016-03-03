@@ -11,6 +11,7 @@ import RealmSwift
 
 class Contacts: Object {
     
+    dynamic var id = 0
     dynamic var name = ""
     dynamic var ktp = ""
     dynamic var bpjs = ""
@@ -18,6 +19,10 @@ class Contacts: Object {
     dynamic var noBapak = ""
     dynamic var noKantor = ""
     dynamic var noLain = ""
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
     
 // Specify properties to ignore (Realm won't persist these)
     
