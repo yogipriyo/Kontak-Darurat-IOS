@@ -51,7 +51,7 @@ class FirstViewController: UIViewController {
     
     @IBAction func BuatQRCode(sender: AnyObject) {
         let Contact = Contacts()
-        //Contact.id = 0
+        
         Contact.name = NameField.text!
         Contact.ktp = KTPField.text!
         Contact.bpjs = BPJSField.text!

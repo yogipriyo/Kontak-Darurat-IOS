@@ -117,9 +117,9 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mZd-1B-cPY">
-                                                <rect key="frame" x="18" y="360" width="292" height="320"/>
+                                                <rect key="frame" x="18" y="350" width="292" height="327"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="320" id="YQL-If-Ecn"/>
+                                                    <constraint firstAttribute="height" constant="327" id="YQL-If-Ecn"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idI-zE-BvF">
@@ -169,7 +169,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Gwr-x0-SiO" secondAttribute="trailing" constant="11" id="hbU-ET-aIP"/>
                                             <constraint firstItem="fR3-Dc-rdQ" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="17" id="iPa-eg-v3H"/>
                                             <constraint firstItem="txM-Bd-y6N" firstAttribute="top" secondItem="5Lm-Xc-mwi" secondAttribute="bottom" constant="23.5" id="iRd-hw-ZdV"/>
-                                            <constraint firstItem="mZd-1B-cPY" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="360" id="ibs-S6-Drp"/>
+                                            <constraint firstItem="mZd-1B-cPY" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="350" id="ibs-S6-Drp"/>
                                             <constraint firstItem="idI-zE-BvF" firstAttribute="top" secondItem="tx4-Du-fL7" secondAttribute="top" constant="389" id="jAz-uK-xza"/>
                                             <constraint firstItem="idI-zE-BvF" firstAttribute="leading" secondItem="tx4-Du-fL7" secondAttribute="leading" constant="18" id="jyy-aR-CAh"/>
                                             <constraint firstItem="o1y-hV-eMV" firstAttribute="top" secondItem="Gwr-x0-SiO" secondAttribute="bottom" constant="8" id="kKd-9h-JuG"/>
