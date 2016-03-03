@@ -17,6 +17,7 @@
 		DB6A09F81C86E0D600E6DA5C /* Kontak_DaruratTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A09F71C86E0D600E6DA5C /* Kontak_DaruratTests.swift */; };
 		DB6A0A031C86E0D600E6DA5C /* Kontak_DaruratUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A0A021C86E0D600E6DA5C /* Kontak_DaruratUITests.swift */; };
 		DB6A0A111C86FB4400E6DA5C /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A0A101C86FB4400E6DA5C /* Contacts.swift */; };
+		DB6A0A161C884CC100E6DA5C /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6A0A151C884CC100E6DA5C /* Reachability.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		DB6A0A021C86E0D600E6DA5C /* Kontak_DaruratUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kontak_DaruratUITests.swift; sourceTree = "<group>"; };
 		DB6A0A041C86E0D600E6DA5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB6A0A101C86FB4400E6DA5C /* Contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
+		DB6A0A151C884CC100E6DA5C /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				DB6A09E01C86E0D600E6DA5C /* AppDelegate.swift */,
 				DB6A09E21C86E0D600E6DA5C /* FirstViewController.swift */,
 				DB6A09E41C86E0D600E6DA5C /* SecondViewController.swift */,
+				DB6A0A151C884CC100E6DA5C /* Reachability.swift */,
 				DB6A09E61C86E0D600E6DA5C /* Main.storyboard */,
 				DB6A09E91C86E0D600E6DA5C /* Assets.xcassets */,
 				DB6A09EB1C86E0D600E6DA5C /* LaunchScreen.storyboard */,
@@ -348,6 +351,7 @@
 				DB6A0A111C86FB4400E6DA5C /* Contacts.swift in Sources */,
 				DB6A09E51C86E0D600E6DA5C /* SecondViewController.swift in Sources */,
 				DB6A09E11C86E0D600E6DA5C /* AppDelegate.swift in Sources */,
+				DB6A0A161C884CC100E6DA5C /* Reachability.swift in Sources */,
 				DB6A09E31C86E0D600E6DA5C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -65,34 +65,40 @@ class FirstViewController: UIViewController {
         })
         //print(Contact)
         
-        if NameField.text != "" {
-            self.ParamsSequences += "Nama : \(NameField.text!)\n"
-            
-            if KTPField.text != ""{
-                self.ParamsSequences += "KTP : \(KTPField.text!)\n"
+        if Reachability.isConnectedToNetwork() == true {
+            //print("Internet connection OK")
+            if NameField.text != "" {
+                self.ParamsSequences += "Nama : \(NameField.text!)\n"
+                
+                if KTPField.text != ""{
+                    self.ParamsSequences += "KTP : \(KTPField.text!)\n"
+                }
+                if BPJSField.text != ""{
+                    self.ParamsSequences += "BPJS : \(BPJSField.text!)\n"
+                }
+                if NoIbuField.text != ""{
+                    self.ParamsSequences += "No.Tlp Ibu/Istri : \(NoIbuField.text!)\n"
+                }
+                if NoBapakField.text != ""{
+                    self.ParamsSequences += "No.Tlp Bapak/Suami : \(NoBapakField.text!)\n"
+                }
+                if NoKantorField.text != ""{
+                    self.ParamsSequences += "No.Tlp Kantor : \(NoKantorField.text!)\n"
+                }
+                if NoLainField.text != ""{
+                    self.ParamsSequences += "No.Tlp Lain : \(NoLainField.text!)\n"
+                }
+                
+                let EscapedParams = self.ParamsSequences.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
+                
+                generateQRCode(EscapedParams)
+                SimpanQRCodeButton.enabled = true
+            } else {
+                AlertPopUp("Error!", "Mohon isi kolom nama")
             }
-            if BPJSField.text != ""{
-                self.ParamsSequences += "BPJS : \(BPJSField.text!)\n"
-            }
-            if NoIbuField.text != ""{
-                self.ParamsSequences += "No.Tlp Ibu/Istri : \(NoIbuField.text!)\n"
-            }
-            if NoBapakField.text != ""{
-                self.ParamsSequences += "No.Tlp Bapak/Suami : \(NoBapakField.text!)\n"
-            }
-            if NoKantorField.text != ""{
-                self.ParamsSequences += "No.Tlp Kantor : \(NoKantorField.text!)\n"
-            }
-            if NoLainField.text != ""{
-                self.ParamsSequences += "No.Tlp Lain : \(NoLainField.text!)\n"
-            }
-            
-            let EscapedParams = self.ParamsSequences.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())
-            
-            generateQRCode(EscapedParams)
-            SimpanQRCodeButton.enabled = true
         } else {
-            AlertPopUp("Error!", "Mohon isi kolom nama")
+            //print("Internet connection FAILED")
+            AlertPopUp("Error!", "Koneksi internet gagal")
         }
     }
     

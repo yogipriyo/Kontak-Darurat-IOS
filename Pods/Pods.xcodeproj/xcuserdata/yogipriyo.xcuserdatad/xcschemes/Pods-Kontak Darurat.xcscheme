@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '56E8495AEE849E2117283C37'
+               BlueprintIdentifier = '96EC2A61A89D95E6A38CE699'
                BlueprintName = 'Pods-Kontak Darurat'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Kontak_Darurat.framework'>
